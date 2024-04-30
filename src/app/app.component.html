@@ -1,4 +1,17 @@
-<h1 class="text-3xl font-bold underline bg-blue-600 text-[pink]">
-  Hello world!
-</h1>
-<!-- <router-outlet></router-outlet> -->
+<section class="main flex flex-row bg-gray-800 text-white h-screen">
+  <section class="side-bar bg-gray-900 w-1/4">
+    <div class="side-menu">
+      <div>Home</div>
+      <div>Search</div>
+    </div>
+    <div class="library">
+      <div>Your Library</div>
+      <div>Create Playlist</div>
+      <div>Browse Podcasts</div>
+    </div>
+  </section>
+  <section class="route w-">
+    <router-outlet></router-outlet>
+  </section>
+</section>
+
