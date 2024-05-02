@@ -1,44 +1,54 @@
-<section class="main flex flex-row bg-gray-800 text-white h-screen">
-  <section class="side-bar bg-gray-900 w-1/4">
-    <div class="side-menu">
-      <div>
-        <img src="../assets/home.png" alt="">
-        <h4>Home</h4>
+<section class="main w-full px-[10px] py-[10px] flex flex-row bg-black text-white h-screen">
+
+  <section class="side-bar flex flex-col justify-start gap-[10px] bg-transparent w-1/4 rounded-lg">
+
+    <div class="side-menu border-[1px] rounded-lg px-[20px] py-[20px] flex flex-col justify-center gap-[10px] bg-gray-900">
+
+      <div class="flex flex-row items-center gap-[20px] hover:bg-pink-950 hover:cursor-pointer transition duration-300 px-[10px] py-[7px] rounded-lg">
+        <img src="../assets/home.png" alt="" class="w-[23px]">
+        <h4 class="font-[600] text-[17px]">Home</h4>
       </div>
-      <div>
-        <img src="../assets/search.png" alt="">
-        <h4>Search</h4>
+
+      <div class="flex flex-row items-center gap-[20px] hover:bg-pink-950 hover:cursor-pointer transition duration-300 px-[10px] py-[7px] rounded-lg">
+        <img src="../assets/search.png" alt="" class="w-[23px]">
+        <h4 class="font-[600] text-[17px]">Search</h4>
       </div>
+
     </div>
-    <div class="library">
 
-      <div>
-        <div>
-          <img src="" alt="">
-          <h4>Your Library</h4>
+    <div class="library border-[1px] rounded-lg px-[10px] py-[20px] flex flex-col justify-center gap-[20px] bg-gray-900">
+
+      <div class="flex flex-row justify-between px-[15px]">
+
+        <div class="flex flex-row gap-[10px] hover:cursor-pointer">
+          <img src="../assets/library.png" alt="" class="w-[23px]">
+          <h4 class="font-[600] texyt-[17px]">Your Library</h4>
         </div>
 
-        <div>
-          <img src="" alt="">
-          <img src="" alt="">
+        <div class="flex flex-row gap-[10px]">
+          <img src="../assets/plus.png" alt="" class="rounded-full p-[3px] hover:bg-pink-950 hover:cursor-pointer transition duration-300 w-[25px] h-[25px]">
+          <img src="../assets/right-arrow.png" alt="" class="rounded-full p-[3px] hover:bg-pink-950 hover:cursor-pointer transition duration-300 w-[25px] h-[25px]">
         </div>
+
       </div>
 
-      <div>
-        <h4>Create your first playlist</h4>
-        <p>It's easy, we'll help you</p>
-        <button>Create playlist</button>
+      <div class="border-[1px] rounded-lg flex flex-col justify-center items-start gap-[10px]">
+        <h4 class="font-[600] text-[17px]">Create your first playlist</h4>
+        <p class="text-[15px]">It's easy, we'll help you</p>
+        <button class="text-[15px] bg-pink-700">Create playlist</button>
       </div>
 
-      <div>
-        <h4>Let's find some podcasts to follow</h4>
-        <p>We'll help you updated on new episodes.</p>
-        <button>Browse Podcasts</button>
+      <div class="border-[1px] rounded-lg flex flex-col justify-center items-start gap-[10px]">
+        <h4 class="font-[600] text-[17px]">Let's find some podcasts to follow</h4>
+        <p class="text-[15px]">We'll help you updated on new episodes</p>
+        <button class="text-[15px] bg-pink-700">Browse Podcasts</button>
       </div>
     </div>
   </section>
+
   <section class="route w-3/4">
     <router-outlet></router-outlet>
   </section>
+
 </section>
 
