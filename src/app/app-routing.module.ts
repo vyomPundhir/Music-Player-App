@@ -22,7 +22,7 @@ const routes: Routes = [
     }
   ]},
   {path: 'search', component: SearchComponent},
-  {path:'', redirectTo: '/home', pathMatch: 'full'}
+  {path:'', redirectTo: '/home/all', pathMatch: 'full'}
 ];
 
 @NgModule({
